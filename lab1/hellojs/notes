@@ -1,0 +1,57 @@
+javascript ES5 "stary" ale uzywany. Wazne - Good parts
+
+ES5 nie ma klas
+
+hoisting - wynoszenie deklaracji do gory 
+IEF - Imidiately executed function
+
+Global scope - zmienne bez var sa global!
+
+scope funkcyjny
+var counter = function(){
+
+    var i = 0;
+    function inc(){
+        return i =+1;
+    }
+
+    return inc();
+}
+
+
+
+
+JavaScript to:
+- jezyk skryptowy, nie kompilowany, interpretowany
+- object oriented
+- Function oriented:
+    funkcja jako zmienna
+    jako argument funkcji
+    argument innej funkcji (funkcje wyzszego rzedu)
+    wartosc zwracana z funkcji
+
+
+dodajemy funkcje ale nie dorzucamy do global
+
+var lib = {}
+
+lib.module = (function() {
+
+    var MyInterface = {
+        message : priv2 + "World",
+        counter : function() {
+            return ++c;
+        },
+        sayHello: function(name) {
+            return "Hello " + name;
+        }
+    var c = 0;
+    var priv2 = "Hello";
+    return MyInterface; 
+    };
+})();
+
+sayHello i couter - metody
+
+
+THIS - obiekt biezacy
