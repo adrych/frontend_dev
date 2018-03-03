@@ -55,3 +55,8 @@ sayHello i couter - metody
 
 
 THIS - obiekt biezacy
+kontekst dzialania
+1 - zwykly kontekst
+2 - konstruktora (konstruktor z Wielkiej litery zawsze)
+3 - metoda
+4- Apply/ call

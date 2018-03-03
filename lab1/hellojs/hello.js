@@ -115,3 +115,59 @@ lib = (function() {
 
 console.log(lib.sayHello('Ziutek'));
 console.log(lib.counter());
+
+
+//zwykly kontekst
+function z(){
+
+    console.log(this.imie);
+}
+/*
+var imie = "Ziutek";
+z();
+*/
+//konstruktor
+/*
+function Person(name) {
+    this.name = name;
+}
+
+var ziutek = new Person('Ziutek');
+var heniek = new Person('Heniek');
+
+console.log(ziutek.name);
+console.log(heniek.name);
+*/
+
+//metoda
+/*
+var person = {
+    //imie : "Nieznane",
+    sayHello: function() {
+        return "Hello " + this.imie; 
+
+    }
+};
+imie = "Henio";
+console.log(person.sayHello());
+*/
+
+//this apply
+
+function sayKwaKwa() {
+    return console.log("Jestem kaczka bo mowie: " + this.kwakwa);
+}
+
+var kaczka = {
+    kwakwa: "kwa kwa"
+};
+
+var pies = {
+    hauhau: "Hau Hau"
+};
+
+
+sayKwaKwa.apply(kaczka);
+sayKwaKwa.apply(pies);
+
+
