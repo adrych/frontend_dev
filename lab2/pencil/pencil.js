@@ -16,12 +16,15 @@ lib.pencil = (function () {
         },
         get_color: function (s_id) {
             return colour[s_id];
-        }
+        },
+        get_filter: function (s_name) {
+            return softness.filter(function () {return softness === s_name;});}
     };
 }());
 
 
-lib.pencil.get_softness(2);
-//console.log(lib.pencil.get_softness(2));
-//console.log(lib.pencil.add_softness("D"));
-//console.log(lib.pencil.get_color(2));
+//lib.pencil.get_softness(2);
+console.log(lib.pencil.get_softness(2));
+console.log(lib.pencil.get_filter("9H"));
+console.log(lib.pencil.add_softness("D"));
+console.log(lib.pencil.get_color(2));
