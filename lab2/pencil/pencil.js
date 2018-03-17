@@ -1,7 +1,7 @@
-var pencil = {};
+var lib = {};
 
 
-pencil = (function() {
+lib.pencil = (function() {
 //var pencil = function(parameter) {
     //var MyInterface = {}
     var softness = ['9H','8H','7H','6H','5H','HB','HH'];
@@ -30,9 +30,9 @@ pencil = (function() {
 
 
 
-console.log(pencil.get_softness(2));
-console.log(pencil.add_softness('D'));
-console.log(pencil.get_color(2));
+console.log(lib.pencil.get_softness(2));
+console.log(lib.pencil.add_softness('D'));
+console.log(lib.pencil.get_color(2));
 
 //console.log(pencil.get_softness(1));
 //console.log(pencil.softness);
