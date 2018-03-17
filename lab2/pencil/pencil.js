@@ -1,15 +1,13 @@
 var lib = {};
-lib.pencil = (function() {
+lib.pencil = (function () {
     "use strict";
-    var softness = ["9H","8H","7H","6H","5H","HB","HH"];
-    var colour =["black","blue","red"];
-    
+    var softness = ["9H", "8H", "7H", "6H", "5H", "HB", "HH"];
+    var colour = ["black", "blue", "red"];
     return {
-        add_softness: function(soft){
+        add_softness: function (soft) {
             softness.push(soft);
-            return "Added: "+soft+ " "+softness;
+            return "Added: " + soft + " " + softness;
         },
-
         get_softness: function (s_id) {
             return softness[s_id];
         },
@@ -23,7 +21,7 @@ lib.pencil = (function() {
 }());
 
 
-
-console.log(lib.pencil.get_softness(2));
-console.log(lib.pencil.add_softness("D"));
-console.log(lib.pencil.get_color(2));
+lib.pencil.get_softness(2);
+//console.log(lib.pencil.get_softness(2));
+//console.log(lib.pencil.add_softness("D"));
+//console.log(lib.pencil.get_color(2));
