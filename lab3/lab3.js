@@ -81,7 +81,7 @@ console.log(someExtension.sayHello());
 function Circle(x, y, r){
 	Shape.call(this, x, y);
 	this.r = r;
-};
+}
 
 Circle.prototype = Object.create(Shape.prototype);
 Circle.prototype.constructor = Circle; //doczytac!!
