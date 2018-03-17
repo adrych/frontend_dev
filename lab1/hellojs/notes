@@ -76,3 +76,23 @@ OBIEKTOWOSC Jezyka
 
 - przy uzyciu funkcji IEF - hermetyzacja
 - dziedziczenie 
+JS jest dziedziczenie prototypowe
+kazdy obiekt ma prywata zmienna __proto__ - wskazuje na klase bazowa, na wlasciwosc bazowa prototype. Tam sa metody jak toString, function,() {..}
+
+
+
+funkcji create nei trzeba ppisac - istnieje by default.
+
+
+var typy = {
+    BUDWLANE: 0,
+    ELEKTRYCZNE: 1,
+    MECHANICZNE: 2
+};
+
+var narzedzia = [
+    { nazwa: "Młotek", typ: [typy.BUDWLANE, typy.MECHANICZNE]},
+    {  nazwa: "Wiertarka", typ: [typy.ELEKTRYCZNE]}
+];
+
+

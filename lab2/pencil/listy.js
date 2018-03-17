@@ -8,3 +8,4 @@ var narzedzia = [
     { nazwa: "Młotek", typ: [typy.BUDWLANE, typy.MECHANICZNE]},
     {  nazwa: "Wiertarka", typ: [typy.ELEKTRYCZNE]}
 ];
+
