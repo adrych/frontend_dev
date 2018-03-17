@@ -1,14 +1,9 @@
 var lib = {};
 lib.pencil = (function() {
-"use strict";
-//var pencil = function(parameter) {
-    //var MyInterface = {}
+    "use strict";
     var softness = ["9H","8H","7H","6H","5H","HB","HH"];
     var colour =["black","blue","red"];
-    var brand;
-
-    //MyInterface.softness = softness;
-    //MyInterface.colour = colour;
+    
     return {
         add_softness: function(soft){
             softness.push(soft);
