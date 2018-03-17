@@ -56,7 +56,15 @@ sayHello i couter - metody
 
 THIS - obiekt biezacy
 kontekst dzialania
-1 - zwykly kontekst
-2 - konstruktora (konstruktor z Wielkiej litery zawsze)
-3 - metoda
-4- Apply/ call
+1 - zwykly kontekst (wiaze do global, orzegladarka do Window)
+2 - konstruktora (konstruktor z Wielkiej litery zawsze) (wiaze do obiektu jesli wywolamy NEW (this))
+3 - metoda (tworzony za pomoca literalu, konstruktora this wiaze do obiektu )
+4 - Apply/ call (wiaze do przekazanego obiektu)
+
+
+2018-03-17
+ES5
+- Good parts
+- funkcje: first class objects
+
+wzorzec modulu
