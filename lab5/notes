@@ -1,0 +1,30 @@
+reactivemanifesto.org
+
+Responsywnosc - interakcyjny 
+Elastic - moc w zaleznosci od obciazenia
+Resiliency - odpornosc na bledy
+Message driven - przekazywanie wiadomosci+aktorzy
+
+reactiveX.io
+
+synchronicznie:
+
+var filecontent = io.readfile('/var.cos')
+
+var value = lib.comm(..)
+
+asynchroniczne
+io.readfileAsynch('funkcja', funkcja zrob_cos_z_wynikiem)
+
+io.read(plik, funkcja(wynik))
+	httpget(wynik, funkcja(wynik2))
+	io.write(plik, wynik3)
+
+observable
+
+marble diagrams
+
+ZADANIA
+
+wyniki porzadkowac - wizualizacja wyniku search'a n lista sformatowana
+

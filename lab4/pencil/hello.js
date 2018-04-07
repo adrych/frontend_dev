@@ -18,3 +18,4 @@ class Shape {
 
 var aShape = new Shape(2,3);
 aShape.moveToZero;
+
