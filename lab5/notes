@@ -24,7 +24,19 @@ observable
 
 marble diagrams
 
+https://www.reactivemanifesto.org/
+http://reactivex.io/documentation/observable.html
+http://rxmarbles.com/#zip
+https://en.wikipedia.org/wiki/Observer_pattern
+
+
 ZADANIA
 
 wyniki porzadkowac - wizualizacja wyniku search'a n lista sformatowana
 
+gra
+Narysowac DIV'a
+w srodku kwadrat, ktory sie przesuwa np. co sekunde.
+wlasny kwadrat, ktory sciga automatyczny - recznie sterowany z klawiatury
+Wszystko na  strumieniach (Rx)
+sterowanie strumien lub mysz
