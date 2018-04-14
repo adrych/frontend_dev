@@ -11,7 +11,7 @@ keyups.throttleTime(500).map(function(x) {
         console.log(x);
     })
     .subscribe(function(x) {
-        $('#results').text(x);
+        $('#results').text(formatJSONa(x));
     });
 
 function searchWikipedia(term){
@@ -25,5 +25,32 @@ function searchWikipedia(term){
 
         }
     }).promise();
+}
+
+function formatJSONa(x){
+    var tbl=$("<table/>").attr("id","my_table");
+    $("#results").append(tbl);
+   /*for(var i=0;i<x[0].length;i++)*/
+   for(var i=0;10;i++)
+    {   
+        var tr="<tr>";
+        var td1="<td> 1* "+x[i][1]+"</td>";
+        var td2="<td>"+x[i][2]+"</td>";
+        var td3="<td>"+x[i][3]+"</td></tr>";
+        
+        var tr4="<tr>";
+        var td5="<td> 4* "+x[i][4]+"</td>";
+        var td6="<td>"+x[i][5]+"</td>";
+        var td7="<td>"+x[i][6]+"</td></tr>";
+        
+        var tr8="<tr>";
+        var td9="<td> 7* "+x[i][7]+"</td>";
+        var td10="<td>"+x[i][8]+"</td>";
+        var td11="<td>"+x[i][9]+"</td></tr>";
+
+
+       $("#my_table").append(tr+td1+td2+td3+tr4+td5+td6+td7); 
+
+    } 
 }
 
