@@ -1,0 +1,37 @@
+npm install -g typescript
+
+npm init -y helloTS
+
+potem wg instrukcji z typescriptlang.org
+
+
+
+npm run build - stworzy katalogi
+node lib/xx.js
+
+
+
+structure:
+
+helloTS
+. package.json (node, npm..)
+. tsconfig.json (TypeScript)
+. .babelrc (Babel)
+ 
+
+http://www.typescriptlang.org/docs/home.html
+
+klasy, funkcje, interfejsy
+
+
+
+ZADANIE
+ES6 - clasa i metody programowania ich
+
+
+TS - swoja class +mini API CRUD
+(interface, dziedziczenie, 
+
+
+
+
