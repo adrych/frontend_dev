@@ -1,0 +1,7 @@
+angular cd
+
+<p> {{person.name}} </p> <=> component person name
+
+
+
+

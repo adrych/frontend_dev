@@ -1,0 +1,60 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@3.5.2
+3 info using node@v6.11.4
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly loadAllDepsIntoIdealTree Finishing
+20 silly idealTree:prePrune lab5
+21 silly loadIdealTree Finishing
+22 silly currentTree lab5
+23 silly idealTree lab5
+24 silly generateActionsToTake Starting
+25 silly install generateActionsToTake
+26 silly generateActionsToTake Finishing
+27 silly diffTrees action count 0
+28 silly decomposeActions action count 0
+29 silly executeActions Starting
+30 silly install executeActions
+31 silly doSerial global-install 0
+32 silly doParallel fetch 0
+33 verbose lock using /home/adrych/.npm/_locks/staging-c1a387e64104191f.lock for /home/adrych/Dokumenty/sem2/frontend_dev/frontend_dev/lab5/node_modules/.staging
+34 verbose unlock done using /home/adrych/.npm/_locks/staging-c1a387e64104191f.lock for /home/adrych/Dokumenty/sem2/frontend_dev/frontend_dev/lab5/node_modules/.staging
+35 silly rollbackFailedOptional Starting
+36 silly rollbackFailedOptional Finishing
+37 silly runTopLevelLifecycles Starting
+38 silly runTopLevelLifecycles Finishing
+39 silly install printInstalled
+40 warn enoent ENOENT: no such file or directory, open '/home/adrych/Dokumenty/sem2/frontend_dev/frontend_dev/lab5/package.json'
+41 warn lab5 No description
+42 warn lab5 No repository field.
+43 warn lab5 No README data
+44 warn lab5 No license field.
+45 verbose stack Error: EEXIST: file already exists, mkdir '/home/adrych/Dokumenty/sem2/frontend_dev/frontend_dev/lab5/node_modules'
+45 verbose stack     at Error (native)
+46 verbose cwd /home/adrych/Dokumenty/sem2/frontend_dev/frontend_dev/lab5
+47 error Linux 4.13.0-41-generic
+48 error argv "/usr/bin/node" "/usr/bin/npm" "install"
+49 error node v6.11.4
+50 error npm  v3.5.2
+51 error path /home/adrych/Dokumenty/sem2/frontend_dev/frontend_dev/lab5/node_modules
+52 error code EEXIST
+53 error errno -17
+54 error syscall mkdir
+55 error EEXIST: file already exists, mkdir '/home/adrych/Dokumenty/sem2/frontend_dev/frontend_dev/lab5/node_modules'
+56 error File exists: /home/adrych/Dokumenty/sem2/frontend_dev/frontend_dev/lab5/node_modules
+57 error Move it away, and try again.
+58 verbose exit [ -17, true ]
