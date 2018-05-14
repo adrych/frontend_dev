@@ -1,0 +1,17 @@
+#bfield {
+    width: 400px;
+    height: 400px;
+    border: solid 1px black;
+}
+
+#box {
+    position:absolute; top:140px; left:140px;
+    width:20px; height:20px;          
+    background-color:black;
+}
+
+#bot {
+    position:absolute; top:10px; left:10px;
+    width:20px; height:20px;          
+    background-color:rgb(241, 8, 8);
+}
