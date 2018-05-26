@@ -1,0 +1,16 @@
+lab 9
+
+- FORMS
+	* form group (form control)
+
+
+- SERVICES
+	* dependency injections
+servisy zewnetrzne tylko asynch/http +RxJs
+
+
+++ start ++
+ng new daform
+
+[] <- wejscie komponentu
+() <- wyjscie komponentu

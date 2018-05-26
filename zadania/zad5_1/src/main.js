@@ -10,6 +10,7 @@ let box_x = 140;
 let box_y = 140;
 let battle_y = 200;
 let battle_x = 200;
+let bot_move = 0;
 
 let canvas = document.getElementById('battlefield');
 let cnt = canvas.getContext('2d');
@@ -48,7 +49,7 @@ function randomMove(){
     return Math.floor(Math.random()*4+1);
 }
 
-//Rx.Observable.timer(0, 1000).map(x => randomMove()).subscribe({ next: x => console.log(x)});
+
 
 function Reset() {
     //console.log('reset');
@@ -107,13 +108,30 @@ function gamestatus() {
 function game_move() {
     //console.log(`game_move`);
     // przesuniecie pilki o offset
-    catchit.bot.x += catchit.bot.offsetX;
-    catchit.bot.y +=  catchit.bot.offsetY;
+    
+    Rx.Observable.timer(0, 1000).map(x => randomMove()).subscribe({ next: x => bot_move = x});
 
+    let x = bot_move;
+    //console.log(bot_move);
+    //catchit.bot.x += catchit.bot.offsetX;
+    //catchit.bot.y +=  catchit.bot.offsetY;
+    if (x === 1 && catchit.bot.y > catchit.bot.radius) {
+        catchit.bot.y -=  catchit.bot.offsetY;
+        
+        }
+    if (x === 2 && catchit.bot.y + catchit.bot.radius < canvas.height) {
+            catchit.bot.y +=  catchit.bot.offsetY;
+        }
+    if (x === 3 && catchit.bot.x + catchit.bot.radius > 0) {
+            catchit.bot.x -=  catchit.bot.offsetX;
+        }
+    if (x === 4 && catchit.bot.x < canvas.width - catchit.bot.radius) {
+            catchit.bot.x +=  catchit.bot.offsetX;
+        }
     if (catchit.human.Up && catchit.human.y > catchit.human.radius) {
-        console.log(`>game_move, Human up, ${catchit.human.y}, ${catchit.human.offset}`);
+        //console.log(`>game_move, Human up, ${catchit.human.y}, ${catchit.human.offset}`);
         catchit.human.y -= catchit.human.offset;
-        console.log(`human at: ${catchit.human.y}`);
+        //console.log(`human at: ${catchit.human.y}`);
         }
 
     if (catchit.human.Down && catchit.human.y + 2*catchit.human.radius < canvas.height) {
@@ -124,7 +142,7 @@ function game_move() {
             catchit.human.x -= catchit.human.offset;
         }
     
-        if (catchit.human.Right && catchit.human.x < canvas.width) {
+    if (catchit.human.Right && catchit.human.x < canvas.width) {
             catchit.human.x += catchit.human.offset;
         }
 

@@ -1,0 +1,10 @@
+<form [formGroup]="myForm" (ngSubmit)="mySubmit(myForm.value)">
+
+  <input type="text" [formControl]="imie">
+
+  <button type="submit">OK</button>
+</form>
+
+<div *ngIf="imie.hasError('required')">Imie wymagane</div>
+<div *ngIf="imie.hasError('minlength')">Imie musi byc dluzsze</div>
+<div *ngIf="imie.hasError('bolekValue')">Wykryto Bolka</div>
