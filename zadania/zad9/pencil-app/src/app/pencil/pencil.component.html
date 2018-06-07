@@ -1,0 +1,17 @@
+<!--<h2>{{ pencil.name }} Details</h2>
+<div><span>id: </span>{{pencil.id}}</div>
+<div><span>name: </span>{{pencil.name | uppercase}}</div>
+<div>
+  <label>Name:
+      <input [(ngModel)]="pencil.name" placeholder="name">
+  </label>
+</div>-->
+
+<h2>My Pencils</h2>
+
+<ul class="pencils">
+  <li *ngFor="let pencil of pencils"  (click)="onSelect(pencil)" [class.selected]="pencil === selectedPencil"> 
+    <span class="badge">{{ pencil.id }}</span> {{ pencil.name }}
+  </li>
+</ul>
+<app-pencil-detail [pencil]="selectedPencil"></app-pencil-detail>

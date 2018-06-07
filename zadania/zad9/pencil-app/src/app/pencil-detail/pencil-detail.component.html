@@ -1,0 +1,22 @@
+<div *ngIf="pencil">
+
+  <h2>{{ pencil.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{pencil.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="pencil.name" placeholder="name"/>
+    </label>
+  </div>
+
+</div>
+<!--
+<div *ngIf="selectedPencil">
+  <h2>{{ selectedPencil.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{ selectedPencil.id }}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedPencil.name" placeholder="name">
+    </label>
+  </div>
+</div>
+-->
