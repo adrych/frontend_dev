@@ -15,3 +15,14 @@
   </li>
 </ul>
 <app-pencil-detail [pencil]="selectedPencil"></app-pencil-detail>
+
+<form [formGroup]="myForm" (ngSubmit)="mySubmit(myForm.value)">
+  <input form="text" [formControl]="myForm.controls['name']">
+  <input form="text" [formControl]="myForm.controls['id']">
+  
+  <button type="submit">OK</button>
+  </form>
+  <div *ngIf="name.hasError('required')">Nazwa jest wymagana</div>
+  <div *ngIf="name.hasError('minlength')">Nazwa jest za krotka</div>
+  <div *ngIf="name.hasError('bolekValue')">Nazwa to Bolek??</div>
+  <div *ngIf="id.hasError('min')">Id jest konieczne</div>
