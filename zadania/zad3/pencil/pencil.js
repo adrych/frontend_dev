@@ -3,6 +3,7 @@ lib.pencil = (function () {
     "use strict";
     var softness = ["9H", "8H", "7H", "6H", "5H", "HB", "HH"];
     var colour = ["black", "blue", "red"];
+    var size;
     return {
         add_softness: function (soft) {
             softness.push(soft);
@@ -23,13 +24,22 @@ lib.pencil = (function () {
 
 }());
 
-Pencil = function (softness, colour) {
+
+// klasa Pencil
+
+function Pencil (softness, colour, size) {
     this.softness = softness;
     this.colour = colour;
+    this.size = size;
 }
 
-Pencil.prototype.kind = function () {
-    return this
+Pencil.prototype = {
+    For_Carpenter: function(){
+        if (this.size > 2){
+            return true}
+        else
+            { return false }
+    }
 }
 
 
@@ -42,7 +52,7 @@ Ballpen.prototype = Object.create(Pencil.prototype);
 
 var aBallpen = new Ballpen(lib.pencil.get_softness(1),lib.pencil.get_color(1), "AA");
 
-console.log(aBallpen.kind());
+console.log(aBallpen.For_Carpenter());
 //onsole.log(aBallpen);
 
 
