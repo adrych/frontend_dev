@@ -3,19 +3,19 @@ Dariusz ADRYCHOWSKI
 Laboratoria i zadania.
 Do zrobienia:
 # Zad 3
-Wlasna klasa ES5
+[Wlasna klasa ES5](https://github.com/adrych/frontend_dev/tree/master/zadania/zad3)
 
 # Zad 4
-Wlasna klasa ES6
+[Wlasna klasa ES6](https://github.com/adrych/frontend_dev/tree/master/zadania/zad4)
 
 # Zad 5
-Wikipedia
-Gra z RxJs
+[Wikipedia](https://github.com/adrych/frontend_dev/tree/master/zadania/zad5)
+[Gra z RxJs](https://github.com/adrych/frontend_dev/tree/master/zadania/zad5)
 
 # Zad 7
-CRUD
+[CRUD](https://github.com/adrych/frontend_dev/tree/master/zadania/zad7)
 
 # Zad 8/9
-
+[Link](https://github.com/adrych/frontend_dev/tree/master/zadania/zad9)
 
 
