@@ -10,7 +10,7 @@ Do zrobienia:
 
 # Zad 5
 [Wikipedia](https://github.com/adrych/frontend_dev/tree/master/zadania/zad5)
-[Gra z RxJs](https://github.com/adrych/frontend_dev/tree/master/zadania/zad5)
+[Gra z RxJs](https://github.com/adrych/frontend_dev/tree/master/zadania/zad5_1)
 
 # Zad 7
 [CRUD](https://github.com/adrych/frontend_dev/tree/master/zadania/zad7)
