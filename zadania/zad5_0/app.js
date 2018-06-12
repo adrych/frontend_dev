@@ -1,20 +1,20 @@
-var q = $('#q');
-var keyups = Rx.Observable.fromEvent(q, 'keyup');
+var query = $('#query');
+var keyups = Rx.Observable.fromEvent(query, 'keyup');
 
-keyups.throttleTime(500).map(function(x) {
-        return q.val();
-    })
-    .switchMap(function(x) {
-        return searchWikipedia(x);
-    })
-    .do(function(x){
-        console.log(x);
-    })
-    .subscribe(function(x) {
-        $('#results').text(formatJSONa(x));
-    });
+keyups.throttleTime(500).map((x) => {
+    return query.val();
+})
+.switchMap((x) => {
+    return searchWikipedia(x);
+})
+.do((x) => {
+    //console.log(x);
+})
+.subscribe((x) => {
+    $('#results').html(createList(x));
+});
 
-function searchWikipedia(term){
+var searchWikipedia = (term) => {
     return $.ajax({
         url: 'http://en.wikipedia.org/w/api.php',
         dataType: 'jsonp',
@@ -22,10 +22,19 @@ function searchWikipedia(term){
             action: 'opensearch',
             format: 'json',
             search: term
-
         }
     }).promise();
-}
+};
+
+let createList = (data) => {
+    let list = '';
+
+    for (let i = 0 ; i < data.length; i++) {
+        list += `<li>${data[1][i]} [<a href="${data[3][i]}" target="blank">${data[3][i]}</a>]</li>`;
+    }
+
+    return `<ul>${list}</ul>`;
+};
 
 function formatJSONa(x){
     var tbl=$("<table/>").attr("id","my_table");
@@ -52,5 +61,4 @@ function formatJSONa(x){
        $("#my_table").append(tr+td1+td2+td3+tr4+td5+td6+td7); 
 
     } 
-}
-
+};
